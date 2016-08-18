@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 0);
 session_start();
 define("USERNAME", "root");
 define("PASSWORD", "");
@@ -23,8 +24,8 @@ define('APP_TITLE', 'Custom PHP MVC framework');
 define('APP_NAME', 'Custom PHP MVC framework');
 
 define('SITE_PATH', dirname(dirname(__FILE__)) . '/');
-define("BASE_URL", "http://" . $_SERVER['HTTP_HOST'] . "/");
-define("BASE_URL_ADMIN", "http://" . $_SERVER['HTTP_HOST'] . "/admin/");
+define("BASE_URL", "http://" . $_SERVER['HTTP_HOST'] . "/custom-php-mvc-framework/");
+define("BASE_URL_ADMIN", "http://" . $_SERVER['HTTP_HOST'] . "/admin/custom-php-mvc-framework/");
 
 define("POST_PIC", "site-content/post-pic/");
 define("FILE_REPOSITORY", "site-content/file-repository/");
