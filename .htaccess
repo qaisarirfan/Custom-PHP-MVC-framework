@@ -1,0 +1,47 @@
+#For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+#RewriteBase /girlvalue.com
+
+#remove file exetions
+RewriteCond %{REQUEST_URI} !-f
+RewriteCond %{REQUEST_URI} !-d
+RewriteRule ^([a-z-_]+?)$	$1\.php
+
+#http://localhost/qadristudio/blog/topics/articals/categories/tutsplus
+RewriteRule ^blog/topics/(.+?)/categories/(.+?)$ blog.php?topics=$1&categories=$2
+
+#http://localhost/qadristudio/blog/topics/body-types
+RewriteRule ^blog/topics/(.+?)$ blog.php?topics=$1
+
+#http://localhost/qadristudio/blog/tag/Punjabi
+RewriteRule ^blog/tag/(.+?)$ blog.php?tag=$1
+
+#http://localhost/qadristudio/blog/plus-mentions-now-group-profiles-and-pages
+RewriteRule ^blog/(.+?)$ blog.php?command=detail&url=$1
+
+#http://localhost/qadristudio/video/topics/girls/categories/niqab
+RewriteRule ^videos/topics/(.+?)/categories/(.+?)/page/(.+?)$ videos.php?topics=$1&categories=$2&page=$3
+RewriteRule ^videos/topics/(.+?)/categories/(.+?)$ videos.php?topics=$1&categories=$2
+
+#http://localhost/qadristudio/video/topics/girls
+RewriteRule ^videos/page/(.+?)$ videos.php?page=$1
+RewriteRule ^videos/topics/(.+?)/page/(.+?)$ videos.php?topics=$1&page=$2
+RewriteRule ^videos/topics/(.+?)$ videos.php?topics=$1
+
+#http://localhost/qadristudio/video/london-grammar-nightcall
+RewriteRule ^video/(.+?)$ videos.php?command=detail&url=$1
+
+#http://localhost/qadristudio/page/roughly-155-character
+RewriteRule ^page/(.+?)$ page.php?url=$1
+
+ErrorDocument 404 /page-not-found.php
+
+#http://www.qadristudio.com/album/character-3/page/1
+RewriteRule ^album/(.+?)/page/(.+?)$ photo.php?url=$1&command=open-album&page=$2
+
+#http://www.qadristudio.com/album/roughly-155-characters-4
+RewriteRule ^album/(.+?)$ photo.php?url=$1&command=open-album
+
+Options -Indexes

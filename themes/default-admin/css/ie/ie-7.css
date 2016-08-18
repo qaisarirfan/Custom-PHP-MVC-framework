@@ -1,0 +1,8 @@
+ul.nav li a { line-height:1.4em; }
+/*login page*/
+.ie { display:block; color:black; }
+.form-signin { border:2px solid #CCC !important; }
+.form-signin .form-signin-heading { padding-bottom:5px; margin-bottom:5px; border-bottom:1px solid #CCC; line-height:normal; }
+.form-signin label { padding-bottom:5px; }
+.input-block-level { display:block; width:280px; padding:0; margin-bottom:5px !important; line-height:1.8em !important; height:auto !important; }
+/*dashboard page*/

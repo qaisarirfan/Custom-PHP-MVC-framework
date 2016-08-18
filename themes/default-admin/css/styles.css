@@ -1,0 +1,124 @@
+@import "default.css";
+@import "fonts/chunkfive/stylesheet.css";
+@import "fonts/sharetech-regular/stylesheet.css";
+/**/
+.font-chunkfive { font-family: 'chunkfiveroman'; }
+.font-share-techregular { font-family: 'share_techregular'; }
+label { font-size: 13px; font-weight: bold; }
+#header { background: url(imgs/header-bg.jpg) repeat-x top left; min-height: 60px; }
+#logo { font-size: 2.5em; color: #FFF; padding: 5px 0 0 0; text-shadow: 0px 0px 1px #000; line-height: 1.2em; }
+ul.nav li a { line-height: 1.5em; }
+/**/
+.dashboard ul li * { cursor: pointer; }
+.dashboard ul li .image { height: 130px; }
+.dashboard ul li h3 { font-size: 1.3em; color: #666 }
+.dashboard ul li .image,
+.dashboard ul li h3 { text-align: center; }
+/**/
+#expireDiv { color: #000; font-size: 14px; display: none; cursor: pointer; padding: 15px 0; position: fixed; text-align: center; width: 100%; background: #FFC; border-bottom: 1px solid #444; }
+#currentSeconds { color: #F00; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.content { background: #fff; border: 1px solid #CCC; min-height: 550px; padding: 15px; }
+.content table.table { width: 100%; table-layout: auto; border: 1px solid #333; border-right: 0; border-bottom: 0; }
+.content table.table tr th { background: #999; padding: 5px; color: #000; border-bottom: 1px solid #333; border-right: 1px solid #333; }
+.content table.table tr td { background: #fff; padding: 5px; color: #000; border-bottom: 1px solid #333; border-right: 1px solid #333; }
+/**/
+#footer { padding: 0; color: #aaaaaa; padding: 12px 0 15px 0; margin-top: 30px; border-top: 1px solid #cccccc; }
+/**/
+div.tabs { padding: 10px 0 0 0; }
+ul.tabNavigation { list-style: none; margin: 0 0 5px 0; padding: 0; }
+ul.tabNavigation li { display: inline; margin-right: 3px; }
+ul.tabNavigation li a { border: 1px solid #f1f1f1; border-bottom: 0; background: #f1f1f1; padding: 5px 10px; color: #000; text-decoration: none; }
+ul.tabNavigation li a.selected,
+ul.tabNavigation li a:hover { background-color: #e0e0e0; color: #000; border: 1px solid #e0e0e0; border-bottom: 0; }
+ul.tabNavigation li a:focus { outline: 0; }
+div.tabs > div { border: 1px solid #e0e0e0; margin: 0 10px 10px 0; padding: 0 0 10px 0; min-height: 150px; }
+div.tabs > div h4 { border-bottom: 1px solid #CCC; background: #e0e0e0; padding: 5px; text-align: right }
+/**/
+ul.tree,
+ul.tree ul { list-style-type: none; background: url(vline.png) repeat-y; margin: 0; padding: 0; }
+ul.tree ul { margin-left: 10px; }
+ul.tree li { margin: 0; padding: 0 12px; line-height: 20px; background: url(node.png) no-repeat; color: #369; font-weight: bold; }
+ul.tree li.last { background: #fff url(imgs/lastnode.png) no-repeat; }
+/**/
+.box { font-size: 13px; }
+.box .background { height: 150px; }
+.box .color { border: 1px solid #CCC; width: 15px; height: 15px; margin: 10px 0 0 0; display: inline-block; }
+.box .button { padding: 10px 0; text-align: center; }
+.box .action { line-height: 1.1em; }
+.box .option { padding: 10px 0 5px; }
+/**/
+.categories-box { margin-bottom: 10px; }
+.categories-box h5 { margin-bottom: 0.3em; font-size: 1.7em; border-bottom: 1px solid #e0e0e0; padding: 0px 0px 3px 0px; }
+.categories-box ul { padding: 0 0 0px 0em; }
+.categories-box ul li { padding: 0 0 3px 0px; }
+.categories-box ul li h6 { font-size: 1.3em; line-height: 1.5em; border-bottom: 1px solid #f1f1f1; margin-bottom: 0.5em; }
+.categories-box ul li h6 ol { float: right; line-height: 1.2em; }
+.categories-box ul li h6 ol li { display: inline; margin-left: 3px; font-size: .8em; }
+.categories-box ul li ul { padding: 0 0 0px 0em; }
+.categories-box ul li ul li { border-bottom: 1px solid #f1f1f1; padding: 0.3em 0; }
+.categories-box ul li ul li ol { float: right; }
+.categories-box ul li ul li ol li { border-bottom: 0; display: inline-block; margin-left: 5px; padding: 0em 0px; }
+/**/
+.video-box { height: 280px; }
+.video-box .video-img { height: 150px; }
+.video-box .video-img img { height: 100%; width: 100%; }
+.video-box .video-detail { padding: 5px 0 0 0; }
+.video-box .video-detail h3 { font-size: 14px; padding-bottom: 3px; }
+.video-box .video-detail .entry-meta { float: none; height: 60px; }
+.video-box .video-detail .entry-meta .meta-author,
+.video-box .video-detail .entry-meta .meta-categories,
+.video-box .video-detail .entry-meta .meta-published { display: block; float: none; }
+.video-box .video-detail .description { font-size: 13px; padding-bottom: 3px; }
+.video-box .video-detail .options { padding: 5px 0; }
+.video-box .video-detail .options .course-lesson-count { float: left; }
+.video-box .video-detail .options .course-lesson-count span { display: block; background: #ffc02f; color: #363231; padding: 3px 10px; -moz-box-shadow: inset 0px 1px 0px #ebb12b; -webkit-box-shadow: inset 0px 1px 0px #ebb12b; box-shadow: inset 0px -1px 0px #ebb12b; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.video-box .video-detail .options .opation { float: right; }
+/* Entry, Course & Search meta */
+.entry-meta { border-bottom: 1px solid #efefef; color: #666; float: left; padding-bottom: 5px; margin: 0 0px 5px 0px; height: 45px; }
+.course-meta { float: right; margin-bottom: 15px; }
+.search-meta { background: url(imgs/bg-line-repeat.png) repeat 0 0; border-top: 1px solid #e6e6e6; float: left; padding: 5px 35px; width: 655px; margin-bottom: 15px; }
+.entry-meta a,
+.course-meta a,
+.search-meta a { color: #666; }
+.entry-meta a:hover,
+.course-meta a:hover,
+.search-meta a:hover { color: #333; }
+.entry-meta .meta-author,
+.meta-published,
+.entry-meta .meta-categories,
+.course-meta .meta-categories,
+.search-meta .meta-categories,
+.search-meta .meta-author { background: url(imgs/sprite-mini-icons.png) no-repeat 0px 0px; display: block; float: left; margin-right: 24px; padding-left: 24px; }
+.meta-published { background-position: 0px -20px; }
+.entry-meta .meta-categories,
+.course-meta .meta-categories,
+.search-meta .meta-categories { background-position: 0px -40px; }
+.cat-sep { color: #ccc; padding: 0 5px; }
+tr.featured td { background: #fbffba !important }
+.valid { color: #060; background: url(imgs/tick.png) no-repeat 0 0px; display: inline-block; padding: 0 0 0 22px; }
+.overload { color: #900; background: url(imgs/cross.png) no-repeat 0 0px; display: inline-block; padding: 0 0 0 22px; }
+/**/
+.container .context .to-do-list .body { border-style: solid; border-width: 1px; border-color: rgb( 219, 219, 219 ); background-color: rgb( 255, 255, 255 ); margin-bottom: 12px; }
+.container .context .to-do-list .header { height: 36px; background: #2e3641; font-size: 14px; color: rgb( 218, 228, 235 ); font-weight: bold; }
+.container .context .to-do-list .header .text,
+.container .context .to-do-list .header .icon { line-height: 2.5em; display: block; }
+.container .context .to-do-list .header .icon { padding: 0 16px 0 16px; border-right: 1px solid rgb( 69, 79, 92 ); margin-right: 3px; }
+.container .context .to-do-list .header .text { padding: 0 0px 0 16px; border-left: 1px solid rgb( 69, 79, 92 ); }
+.container .context .to-do-list .body .to-do-row { border-bottom: 1px solid #e6ebed; font-size: 12px; color: rgb( 158, 178, 192 ); }
+.container .context .to-do-list .body .to-do-row .text,
+.container .context .to-do-list .body .to-do-row .icon { line-height: 2.5em; display: block; }
+.container .context .to-do-list .body .to-do-row .icon { padding: 0 16px 0 16px; border-right: 1px solid #f2e3df; margin-right: 3px; }
+.container .context .to-do-list .body .to-do-row .text { padding: 0 16px 0 16px; border-left: 1px solid #f2e3df; }
+.container .context .to-do-list .body .to-do-row .link { padding: 0 16px 0 16px; border-left: 1px solid #f2e3df; line-height: 2.5em; }
+.container .context .to-do-list .body .to-do-row .text.green { color: #090; }
+.container .context .to-do-list .body .to-do-row .text em.error-msg { color: #F00; }
+/**/
+.order { margin: 0; padding: 0; line-height: none; }
+.order li { display: inline-block; padding: 0 24px 0 0; font-weight: bold; }
+.order li a { font-weight: normal; }
+
+/**/
+@media(min-width:320px) and (max-width:767px) {
+.context { padding: 0 10px; }
+}
+/**/

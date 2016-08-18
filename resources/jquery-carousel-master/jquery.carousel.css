@@ -1,0 +1,25 @@
+#my-carousel-1 .mask { width:150px; }
+/**/
+#my-carousel-2 { margin:0px 0 10px 0; }
+#my-carousel-2 .mask { position:relative; z-index:5; }
+#my-carousel-2 ul li { margin:0 5px 0 4px; }
+/**/
+#my-carousel-3 .mask { width:450px; }
+/**/
+.no-js .carousel ul { position:static; }
+.carousel .mask { position:relative; overflow:hidden; border:1px solid #e1e1e1; padding:6px 0px; background:#f1f1f1; }
+.carousel ul { overflow:hidden; margin:0; padding:10px 0px; list-style:none; }
+.carousel ul li { border:1px solid #e1e1e1; float:left; width:75px; height:75px; color:#fff; text-align:center; overflow:hidden; }
+.carousel ul li a { display:block; }
+/**/
+.carousel { position:relative; }
+.carousel .prev,
+.next { position:absolute; top:-20px; z-index:5; padding:2px 6px; display:block; background:#f1f1f1; color:#333; border:1px solid #e1e1e1; border-bottom:0; z-index:1 }
+.carousel .prev { left:5px; }
+.carousel .next { left:5px; }
+.carousel .disabled { display:none; }
+.carousel .pagination-links { list-style:none; margin:0; padding:0; position:absolute; top:-19px; right:5px; z-index:1; }
+.carousel .pagination-links li { float:left; margin-left:3px; }
+.carousel .pagination-links li a { padding:2px 6px; display:block; background:#fff; color:#333; border:1px solid #e1e1e1; border-bottom:0; }
+.carousel .pagination-links li a:hover { text-decoration:none; }
+.carousel .pagination-links li.current a { background:#f1f1f1; color:#333; border:1px solid #e1e1e1; border-bottom:0; }
