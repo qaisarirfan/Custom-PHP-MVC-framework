@@ -11,7 +11,7 @@
 
 	include( "core/functions/functions.php" );
 
-	include( "webstats/stat-counter.php" );	
+		
 	
 	$theme = new Themes( 'default-theme' );
 	$theme->theme_dir = 'themes';
